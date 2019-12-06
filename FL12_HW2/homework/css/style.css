@@ -1,0 +1,69 @@
+/*
+
+write your code here
+
+*/
+li.tm-nav-item:hover {
+	background-color: lightskyblue;
+}
+.tm-nav-item-link:hover {
+	color: #fff;
+}	
+.tm-banner {
+	background: linear-gradient(90deg,lightskyblue,burlywood);
+}
+.tm-banner-inner {
+	background: white;
+}
+p.tm-banner-text {
+	text-shadow: 5px 5px #333;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-name: anmtn; 
+}
+
+@keyframes anmtn {
+	from {
+		margin-left: 400px; 
+	}
+}
+.tm-team-img {
+	float: right;
+}
+.flex-2-col {
+	 display: flex; 
+	 align-items: center;
+}
+.tm-section-description {
+	text-indent: 25px;
+}
+.tm-section-title h2 {
+	text-align: center;
+}
+li.box-bg:hover {
+	background-color: lightgrey;
+}
+.tm-box-bg-title h2 {
+	color: lightskyblue;
+}
+.padding-medium h2 {
+	text-align: center;
+	color: lightblue;
+}
+.text:after { 
+	content:'New';
+	color: red;
+	vertical-align: super; 
+	font-variant: small-caps;
+	font-size: 10px;
+	font-weight: 800;
+	
+}
+.padding-medium	ol{
+	list-style: lower-alpha;
+}
+.padding-medium li:hover:before{
+	content:'>';
+	color: black;
+	font-weight: 800;
+}
