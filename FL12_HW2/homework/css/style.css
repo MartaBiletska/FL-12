@@ -28,7 +28,7 @@ write your code here
 	    margin: 0 auto; 
 	}
 
-	.tm-team-description-container .tm-section-title {
+	.tm-team-description-container > .tm-section-title {
 		text-align: center;
 	}
 
