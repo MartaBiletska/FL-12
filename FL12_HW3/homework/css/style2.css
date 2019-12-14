@@ -1,0 +1,201 @@
+body .header .header-wrap .landing-logo p span, body .footer .footer-wrap .footer_logo p span {
+  display: block;
+  font-size: 9px; }
+
+body {
+  margin: 0;
+  background-color: #302f30; }
+  body .header {
+    background: no-repeat url(../img/m-h-night.jpg);
+    padding-bottom: 125px;
+    border-bottom-right-radius: 600px 250px;
+    background-size: 1500px;
+    margin-top: -200px; }
+    body .header .header-wrap {
+      padding-top: 225px;
+      padding-left: 150px;
+      padding-right: 785px; }
+      body .header .header-wrap .landing-logo {
+        display: flex;
+        height: 45px; }
+        body .header .header-wrap .landing-logo p {
+          margin-top: 8px;
+          margin-left: 10px;
+          color: white;
+          opacity: 1;
+          text-align: center;
+          font-family: "Fresca", sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 17px; }
+      body .header .header-wrap .header_heading {
+        font-weight: bold;
+        font-size: 55px;
+        font-family: 'Hind', sans-serif;
+        line-height: 60px;
+        color: white;
+        opacity: 1;
+        height: 100px;
+        z-index: 1;
+        position: relative; }
+        body .header .header-wrap .header_heading:after {
+          position: absolute;
+          background-color: #ff4916;
+          content: "";
+          z-index: -1;
+          left: 0px;
+          bottom: -15px;
+          height: 45px;
+          width: 235px; }
+      body .header .header-wrap .header_text {
+        font-family: "Fresca", sans-serif;
+        font-size: 15px;
+        line-height: 22px;
+        opacity: 1;
+        color: white;
+        height: 120px; }
+      body .header .header-wrap div .header_button {
+        background-color: #ffc92a;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        height: 38px;
+        width: 120px;
+        font-family: 'Hind', sans-serif; }
+      body .header .header-wrap div .login {
+        font-family: "Source Sans Pro", sans-serif;
+        color: white;
+        margin-left: 125px; }
+  body .section {
+    background-color: #302f30; }
+    body .section .section_text {
+      font-size: 35px;
+      text-align: center;
+      font-family: 'Hind', sans-serif;
+      color: white;
+      position: relative;
+      z-index: 1; }
+      body .section .section_text:after {
+        position: absolute;
+        background-color: #ff4916;
+        content: "";
+        z-index: -1;
+        right: 551px;
+        top: -5px;
+        width: 155px;
+        height: 45px; }
+    body .section .section_card_wrap {
+      padding-top: 0;
+      padding-right: 300px;
+      padding-bottom: 5px;
+      padding-left: 300px; }
+      body .section .section_card_wrap .section_card {
+        display: flex;
+        margin-bottom: 23px;
+        background-color: #494949;
+        border-radius: 5px;
+        height: 240px; }
+        body .section .section_card_wrap .section_card .section_card_text {
+          font-size: 12px;
+          font-family: 'Hind', sans-serif;
+          color: white;
+          margin-left: 65px;
+          margin-right: 65px; }
+        body .section .section_card_wrap .section_card .section_card_heading {
+          padding-top: 25px;
+          font-family: 'Hind', sans-serif;
+          font-size: 17px;
+          padding-left: 175px;
+          height: 40px;
+          color: white; }
+        body .section .section_card_wrap .section_card .section_card_img {
+          border-width: 15px;
+          border-style: solid;
+          border-color: #494949;
+          border-radius: 24px;
+          width: 100%; }
+        body .section .section_card_wrap .section_card .section_link {
+          font-family: "Source Sans Pro", sans-serif;
+          padding-left: 195px;
+          font-size: 13px;
+          color: white; }
+    body .section .section_banner_text_wrap {
+      height: 120px;
+      background: linear-gradient(45deg, yellow, #ff0055);
+      margin-top: 80px;
+      margin-left: 265px;
+      margin-right: 265px;
+      margin-bottom: -50px;
+      border-radius: 5px;
+      position: relative; }
+      body .section .section_banner_text_wrap .section_banner_heading {
+        padding-top: 25px;
+        margin-left: 140px;
+        font-size: 20px;
+        font-family: 'Hind', sans-serif;
+        color: white;
+        font-weight: bold;
+        opacity: 1;
+        height: 18px;
+        position: relative;
+        z-index: 1; }
+        body .section .section_banner_text_wrap .section_banner_heading:after {
+          position: absolute;
+          background-color: #ff4916;
+          content: "";
+          z-index: -1;
+          left: 83px;
+          bottom: -7px;
+          width: 42px;
+          height: 35px; }
+      body .section .section_banner_text_wrap .section_banner_text {
+        margin-left: 140px;
+        color: white;
+        opacity: 1;
+        font-size: 11px;
+        font-family: "Fresca", sans-serif; }
+    body .section .section_banner_button {
+      background-color: #ffc92a;
+      color: white;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      height: 38px;
+      width: 120px;
+      font-family: 'Hind', sans-serif;
+      margin-left: 1000px;
+      transform: translate(-50%, -70%);
+      position: relative; }
+  body .footer {
+    background-color: #494949;
+    margin-top: -45px;
+    height: 225px; }
+    body .footer .footer-wrap {
+      display: flex;
+      padding-left: 132px;
+      padding-right: 132px;
+      padding-top: 130px; }
+      body .footer .footer-wrap .footer_logo {
+        transform: translate(-5%, -40%);
+        display: flex;
+        height: 45px; }
+        body .footer .footer-wrap .footer_logo p {
+          margin-top: 8px;
+          margin-left: 10px;
+          text-align: center;
+          font-size: 18px;
+          font-family: "Fresca", sans-serif;
+          font-weight: bold;
+          line-height: 17px;
+          color: white; }
+      body .footer .footer-wrap .footer_text {
+        color: white;
+        margin-left: 335px;
+        margin-right: 235px;
+        font-size: 15px;
+        margin-top: -20px;
+        text-align: left; }
+      body .footer .footer-wrap .footer-cr {
+        color: white;
+        white-space: nowrap; }

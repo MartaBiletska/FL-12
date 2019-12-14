@@ -1,0 +1,282 @@
+// Write your styles here
+
+@mixin buttonsettings {
+  background-color: $color2;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  height: 38px;
+  width: 120px;
+  font-family: 'Hind', sans-serif;
+}
+
+@mixin linkstyle {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+%spanstyle {
+  display: block;
+  font-size: 9px;
+}
+
+@function height() {
+  @return 45px;
+}
+
+
+  body {
+    margin: 0;
+    background-color: $color3;
+
+    .header {
+      background: $backgroundimg;
+      padding-bottom: 125px;
+      border-bottom-right-radius: 600px 250px;
+      background-size: 1500px;
+      margin-top: -200px;
+
+      .header-wrap {
+        padding-top: 225px;
+        padding-left: 150px;
+        padding-right: 785px;
+
+        .landing-logo {
+          display: flex;
+          height: height();
+
+          p {
+            margin-top: 8px;
+            margin-left: 10px;
+            color: $color1;
+            opacity: $opct1;
+            text-align: center;
+            font-family: $font1;
+            font-size: 18px;
+            font-weight: $fontweight;
+            line-height: 17px;
+
+            span {
+              @extend %spanstyle;
+            }
+          }
+        }
+
+        .header_heading {
+          font-weight: bold;
+          font-size: 55px;
+          font-family: 'Hind', sans-serif;
+          line-height: 60px;
+          color: $color1;
+          opacity: $opct1;
+          height: 100px;
+          z-index: 1;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            background-color: $color6;
+            content: "";
+            z-index: -1;
+            left: 0px;
+            bottom: -15px;
+            height: 45px;
+            width: 235px;
+          }
+
+        }
+
+        .header_text {
+          font-family: $font2;
+          font-size: 15px;
+          line-height: 22px;
+          opacity: $opct2;
+          color: $color1;
+          height: 120px;
+        }
+
+        div {
+          .header_button {
+            @include buttonsettings;
+          }
+
+          .login {
+            @include linkstyle;
+            color: white;
+            margin-left: 125px;
+          }
+        }
+      }
+    }
+
+    .section {
+      background-color: $color3;
+
+      .section_text {
+        font-size: 35px;
+        text-align: center;
+        font-family: 'Hind', sans-serif;
+        color: $color5;
+        position: relative;
+        z-index: 1;
+
+        &:after {
+          position: absolute;
+          background-color: $color6;
+          content: "";
+          z-index: -1;
+          right: 551px;
+          top: -5px;
+          width: 155px;
+          height: 45px;
+        }
+      }
+
+      .section_card_wrap {
+        padding-top: 0;
+        padding-right: 300px;
+        padding-bottom: 5px;
+        padding-left: 300px;
+
+        .section_card {
+          display: flex;
+          margin-bottom: 23px;
+          background-color: $color4;
+          border-radius: 5px;
+          height:240px;
+
+          .section_card_text {
+            font-size: 12px;
+            font-family: 'Hind', sans-serif;
+            color: white;
+            margin-left: 65px;
+            margin-right: 65px;
+          }
+
+          .section_card_heading {
+            padding-top: 25px;
+            font-family: 'Hind', sans-serif;
+            font-size: 17px;
+            padding-left: 175px;
+            height: 40px;
+            color: white;
+          }
+
+          .section_card_img {
+            border-width: 15px;
+            border-style: solid;
+            border-color: $color4;
+            border-radius: 24px;
+            width: 100%;
+          }
+
+          .section_link {
+            @include linkstyle;
+            padding-left: 195px;
+            font-size: 13px;
+            color: white;
+          }
+        }
+      }
+
+      .section_banner_text_wrap {
+        height: 120px;
+        background: $gradient;
+        margin-top: 80px;
+        margin-left: 265px;
+        margin-right: 265px;
+        margin-bottom: -50px;
+        border-radius: 5px;
+        position: relative;
+
+        .section_banner_heading {
+          padding-top: 25px;
+          margin-left: 140px;
+          font-size: 20px;
+          font-family: 'Hind', sans-serif;
+          color: $color1;
+          font-weight: bold;
+          opacity: $opct1;
+          height: 18px;
+          position: relative;
+          z-index: 1;
+
+          &:after {
+            position: absolute;
+            background-color: $color6;
+            content: "";
+            z-index: -1;
+            left: 83px;
+            bottom: -7px;
+            width: 42px;
+            height: 35px;
+          }
+        }
+
+        .section_banner_text {
+          margin-left: 140px;
+          color: white;
+          opacity: $opct1;
+          font-size: 11px;
+          font-family: $font1;
+        }
+      }
+
+      .section_banner_button {
+        @include buttonsettings;
+        margin-left: 1000px;
+        transform: translate(-50%, -70%);
+        position: relative ;
+      }
+    }
+
+    .footer {
+      background-color: $color4;
+      margin-top: -45px;
+      height: 225px;
+
+
+      .footer-wrap {
+        display: flex;
+        padding-left: 132px;
+        padding-right: 132px;
+        padding-top: 130px;
+
+
+        .footer_logo {
+          transform: translate( -5%, -40%);
+          display: flex;
+          height: height();
+
+          p {
+            margin-top: 8px;
+            margin-left: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-family: $font1;
+            font-weight: $fontweight;
+            line-height: 17px;
+            color: white;
+
+            span {
+              @extend %spanstyle;
+            }
+          }
+        }
+
+        .footer_text {
+          color: white;
+          margin-left: 335px;
+          margin-right: 235px;
+          font-size: 15px;
+          margin-top: -20px;
+          text-align: left;
+        }
+
+        .footer-cr {
+          color: white;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
