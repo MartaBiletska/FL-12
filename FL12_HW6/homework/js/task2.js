@@ -1,6 +1,6 @@
-var a = +prompt('Input side a', "write here");
-var b = +prompt('Input side b', "write here");
-var c = +prompt('Input side c', "write here");
+const a = +prompt('Input side a', 'write here');
+const b = +prompt('Input side b', 'write here');
+const c = +prompt('Input side c', 'write here');
 
 if (isNaN(a) || isNaN(b) || isNaN(c)) {
     alert('input values should be ONLY numbers');
@@ -14,15 +14,11 @@ if (c < a + b && b < a + c && a < b + c) {
 
     if (a === b && a === c && c === b) {
         console.log('Equilateral triangle');
-    }
-    else if (a === b || b === c || c === a) {
+    } else if (a === b || b === c || c === a) {
         console.log('Isosceles triangle');
-    }
-    else if (a !== b && b !== c && b !== a)  {
+    } else if (a !== b && b !== c && b !== a) {
         console.log('Scalene triangle');
     }
-}
-
-else {
+} else {
     console.log('Triangle doesn’t exist');
 }
