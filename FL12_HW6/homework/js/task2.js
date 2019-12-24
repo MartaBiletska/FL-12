@@ -26,14 +26,3 @@ if (c < a + b && b < a + c && a < b + c) {
 else {
     console.log('Triangle doesn’t exist');
 }
-
-
-
-
-
-
-
-
-
-
-
