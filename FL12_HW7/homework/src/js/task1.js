@@ -44,4 +44,3 @@ if (pass === null || pass === '') {
             alert('Wrong password.');
         }
     }
-
