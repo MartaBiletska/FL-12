@@ -1,0 +1,29 @@
+/* Todo: your styles go here*/
+
+icon {
+    color: darkgoldenrod;
+}
+
+.material-icons {
+    vertical-align: bottom;
+}
+
+.eFolder {
+    font-style: italic;
+}
+
+.folder{
+    cursor: pointer;
+}
+
+.closed {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+ul {
+    list-style-type:none;
+}
