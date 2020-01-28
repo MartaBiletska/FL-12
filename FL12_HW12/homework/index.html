@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Homework 12 - Simple TODO List</title>
+  <link rel = "stylesheet" href = "./assets/styles.css">
+</head>
+<body>
+
+<div id = "root">
+  <div class = "Main">
+    <fieldset>
+        <h1>MY SETS</h1>
+        <button type = "button" class = "add_b">
+          Add new set
+        </button>
+    </fieldset>
+  </div>
+  <div class = "hidden addSet">
+    <fieldset>
+      <legend>
+       OUR NEW SET :
+      </legend>
+       NAME:
+      <input type = "text" class = "setName" placeholder = "Input a set name">
+      <br>
+      <button type = "button" class = "terms">
+        ADD NEW TERMS
+      </button>
+      <button type = "button" class = "save_button">
+        SAVE
+      </button>
+      <button type = "button" class = "cancel_button">
+        CANCEL
+      </button>
+    </fieldset>
+  </div>
+</div>
+<script src="./src/app.js"></script>
+</body>
+</html>
